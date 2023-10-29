@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLASTED Apparel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-png" href="image/logo-transparan.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-l">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light position-fixed-top"
+            style="background-color: #1D1D1D; width: auto; height: 70px;">
+            <div class="container-fluid text-light">
+                <a class="navbar-brand text-light" href="index.html">
+                    <img src="image/logo-transparan.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    BLASTED Apparel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" style="background-color: #1D1D1D;" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="background-color: #1D1D1D;" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="background-color: #1D1D1D;" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="background-color: #1D1D1D;" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="background-color: #1D1D1D;"
+                            href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCOUNT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                            style="background-color: #1D1D1D;">
+                            <li><a class="dropdown-item text-light" style="background-color: #1D1D1D;"
+                                    href="index.html">LOG IN</a></li>
+                            <li><a class="dropdown-item text-light" style="background-color: #1D1D1D;"
+                                    href="register.html">SIGN UP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid py-5 mt-5" style="background-color: #262626; height: 100%;">
+        <div class="container mt-5" >
+            <div class="card shadow">
+                <form class="px-5 py-5" >
+                    <div class="mb-3">
+                        <h1 class="text-center">REGISTER NOW!!!</h1>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <div class="input-group row px-3">
+                            <label for="input-group" class="px-0">First and Last Name</label>
+                            <input type="text" aria-label="First name" class="form-control" required>
+                            <input type="text" aria-label="Last name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control" aria-label="Username" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="InputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="InputPassword1" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Phone Number" class="form-label">Phone Number</label>
+                        <input
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number" class="form-control" maxlength="13" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Postal Code" class="form-label">Postal Code</label>
+                        <input
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number" class="form-control" maxlength="5" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="Inputaddressl" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Salary" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="rupiah" required>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Gender" class="form-label">Gender</label>
+                        <select class="form-select" id="inputGroupSelect01" required>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 px-5">
+                        <label for="Religion" class="form-label">Religion</label>
+                        <select class="form-select" id="inputGroupSelect01" required>
+                            <option value="1">Islam</option>
+                            <option value="2">Kristen</option>
+                            <option value="3">Katolik</option>
+                            <option value="4">Hindu</option>
+                            <option value="5">Budha</option>
+                            <option value="6">Konghuchu</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn mx-5 btn-primary"><a href="index.html" class="btn-primary"
+                            style="text-decoration: none;">Submit</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class='bx bxs-to-top bx-fade-up'></i>
+    </button>
+
+    <script type="text/javascript">
+
+        var rupiah = document.getElementById('rupiah');
+        rupiah.addEventListener('keyup', function (e) {
+            rupiah.value = formatRupiah(this.value, 'Rp. ');
+        })
+        function formatRupiah(angka, prefix) {
+            var number_string = angka.replace(/[^,\d]/g, '').toString(),
+                split = number_string.split(','),
+                sisa = split[0].length % 3,
+                rupiah = split[0].substr(0, sisa),
+                ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+            if (ribuan) {
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+
+            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+            return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
